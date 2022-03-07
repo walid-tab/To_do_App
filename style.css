@@ -1,0 +1,94 @@
+body {
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+ 
+}
+
+/* margins et padding de la liste */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Style d'elements de la liste */
+ul li {
+  cursor: pointer;
+  position:relative;
+  padding: 12px 8px 12px 40px;
+  background: rgb(200, 200, 200);
+  font-size: 18px;
+  margin-bottom: 4px;
+     
+}
+
+/* Ajouter les éléments de liste impairs sur une couleur différente */
+ul li:nth-child(odd) {
+  background: #c4b2b2;
+  font-weight: bold;
+}
+
+/* background-color d'un element de la liste : hover  */
+ul li:hover {
+  background: rgb(140, 190, 176);
+}
+
+
+/* Style du bouton close  */
+.close {
+  position:absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 20px;
+  
+}
+
+.close:hover {
+  background-color: #484849;
+  color: white;
+  font-weight: bold;
+}
+
+/* Style head to Do */
+.header {
+  background-color: teal;
+  padding: 30px 30px;
+  color: white;
+  text-align: center;
+}
+
+/* Partie ajouté aprés head */
+.header:after {
+  content:"";
+  display:block;
+  clear:both;
+}
+
+/* Style d'element ajouté */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  width: 70%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style du bouton add */
+.addBtn {
+  padding: 10px;
+  width: 20%;
+  background: #d0d0f0;
+  color: rgb(70, 70, 70);
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0 8px 8px 0;
+}
+
+.addBtn:hover {
+  background-color: #88a0a5;
+}
